@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Űrlapok tesztelése</title>
     <link rel="stylesheet" href="stilus.css">
-    <script src="valid.js"></script>
+    
 </head>
 <body>
-    <form name="validTeszt" method="get" action="#" onsubmit="return validateForm()">
+    <fieldset>
+    <form name="" method="post" action="action (1).php">
+        
         <div class="sor">
-            <label for="vnev">Vezetéknév: </label>
-            <input type="text" name="vnev" id="vnev" pattern="[A-Z][A-Za-z ]{3}" >
+            <label for="fnev">felhasználónév: </label>
+            <input type="text" name="fnev" id="fnev" placeholder="csak ekezet nelkuli"   pattern="[A-Z][A-Za-z ]*" >
         </div>
         <div class="sor">
-            <label for="knev">Keresztknév: </label>
-            <input type="text" name="knev" id="knev" pattern="[A-Z][A-Za-z ]{3}" >
+            <label for="mail">Email: </label>
+            <input type="email" name="mail" id="mail"    placeholder="vmi@vmi.hu" >
         </div>
         <div class="sor">
-            <label for="jelszo1">Jelszó1: </label>
-            <input type="password" name="jelszo1" id="jelszo1">
+            <label for="jsz">Jelszó: </label>
+            <input type="password" name="jsz" id="jsz" placeholder="min 3 karakter" pattern="[a-zA-Z]*">
         </div>
-        <div class="sor">
-            <label for="jelszo2">Jelszó2: </label>
-            <input type="password" name="jelszo2" id="jelszo2">
-        </div>
+        </fieldset>
         <div class="sor">
             <input type="submit" name="kuld" id="kuld" value="Küldés">
         </div>
