@@ -6,17 +6,20 @@ def validalas():
     driver = webdriver.Firefox()
 
     # Töltse be az oldaladat
-    driver.get("oldalad_github-os_url-je")
+    driver.get("http://localhost/szft0327/")
 
     # A nevek alapján kerestessük meg az űrlap elemeit!
-    k_nev = driver.find_element(By.NAME,"kNev")
-    v_nev = driver.find_element(By.NAME,"vNev")
+    f_nev = driver.find_element(By.NAME,"fnev")
+    jelszo = driver.find_element(By.NAME,"jsz")
+    email = driver.find_element(By.NAME,"mail")
     # ... 
     # A következő elemet nem kell átírnod:
     submit_gomb = driver.find_element(By.XPATH,"//input[@type='submit']")
 
     # Add meg a működő - majd később a nem működő - teszt adatokat!
-    k_nev.send_keys("John")
+    f_nev.send_keys("John")
+    jelszo.send_keys("Lma123")
+    email.send_keys("vami@vmi.hu")
     # ...
 
     # Kattints a submit gombra!
