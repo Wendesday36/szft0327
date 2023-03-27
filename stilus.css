@@ -1,13 +1,12 @@
 .sor{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin: 10px;
 }
 input{
     width: 50%;
 }
-sor *{
-    margin: 10px;
-}
+
 form{
     width: 80%;
 }

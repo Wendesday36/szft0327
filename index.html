@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="hu-HU">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Űrlapok tesztelése</title>
-    <link rel="stylesheet" href="stilus.css">
-    
-</head>
-<body>
-    <fieldset>
-    <form name="" method="post" action="action (1).php">
-        
+    <link rel="stylesheet" href="stilus.css" />
+    <script src="success (1).js"></script>
+  </head>
+  <body>
+    <form method="get" action="action (1).php">
+      <fieldset>
+        <legend>Regisztráció:</legend>
         <div class="sor">
-            <label for="fnev">felhasználónév: </label>
-            <input type="text" name="fnev" id="fnev" placeholder="csak ekezet nelkuli"   pattern="[A-Z][A-Za-z ]*" >
+          <label for="fnev">felhasználónév: </label>
+          <input
+            type="text"
+            name="fnev"
+            id="fnev"
+            placeholder="csak ekezet nelkuli"
+            pattern="[A-Z][A-Za-z ]*"
+          />
         </div>
         <div class="sor">
-            <label for="mail">Email: </label>
-            <input type="email" name="mail" id="mail"    placeholder="vmi@vmi.hu" >
+          <label for="mail">Email: </label>
+          <input type="email" name="mail" id="mail" placeholder="vmi@vmi.hu" />
         </div>
         <div class="sor">
-            <label for="jsz">Jelszó: </label>
-            <input type="password" name="jsz" id="jsz" placeholder="min 3 karakter" pattern="[a-zA-Z]*">
+          <label for="jsz">Jelszó: </label>
+          <input
+            type="password"
+            name="jsz"
+            id="jsz"
+            placeholder="min 3 karakter"
+          />
+          <!-- pattern="[a-zA-Z0-9] {3}" -->
         </div>
-        </fieldset>
-        <div class="sor">
-            <input type="submit" name="kuld" id="kuld" value="Küldés">
-        </div>
+      </fieldset>
+      <div class="sor">
+        <input type="submit" name="kuld" id="kuld" value="Küldés" />
+      </div>
     </form>
-    
-</body>
+    <div class="sucess messages">Sikeres Küldés</div>
+  </body>
 </html>
